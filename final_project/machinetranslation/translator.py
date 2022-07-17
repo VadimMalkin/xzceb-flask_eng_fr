@@ -3,12 +3,10 @@ import json
 import os
 from ibm_watson import LanguageTranslatorV3
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
-from dotenv import load_dotenv
 
-load_dotenv()
 
-apikey = os.environ['apikey']
-url = os.environ['url']
+apikey='3wk8xytF2Y5pUvH-hOqk0n4EDlRobJApqrVpMdOlZvgN'
+url='https://api.us-south.language-translator.watson.cloud.ibm.com/instances/3c7bc7f0-28b5-4997-9461-c078b903158a'
 
 authenticator = IAMAuthenticator(apikey)
 language_translator = LanguageTranslatorV3(
